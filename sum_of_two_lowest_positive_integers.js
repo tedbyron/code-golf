@@ -8,13 +8,12 @@
 s=n=>n.sort((x,y)=>x-y).slice(0,2).reduce((x,y)=>x+y)
 
 /**
+ * beautified
  * @function
  * @param {number[]} numbers - input array
  */
-let sumTwoSmallestNumbers(numbers) = function() {
-  let numbersAscending = numbers.sort(function(x, y) {
-    return x - y
-  }
-  let twoLowest = numbersAscending.slice(0, 2)
-  let sum = reduce((a,b)=>a+b)
+function s(n) {
+  return n.sort(function(x, y) { return x - y })  // sort n with compareFunction that compares each element to the next with subtraction (smaller integers have smaller compare values, sorts integers 
+  .slice(0,2)                                     // slice first two elements from sorted array                            
+  .reduce(function(x, y) { return x + y })        // reduce two-element array with callback that sums each element
 }
