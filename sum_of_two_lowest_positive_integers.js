@@ -3,12 +3,12 @@
  */
 
 /**
- * minified
+ * golfed
  */
 s=n=>n.sort((x,y)=>x-y).slice(0,2).reduce((x,y)=>x+y)
 
 /**
- * beautified
+ * ungolfed
  * @function
  * @param {number[]} numbers - input array
  */
