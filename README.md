@@ -1,2 +1,2 @@
 # golf
->   My (not so great) code golf solutions
+>   My code golf solutions
