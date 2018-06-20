@@ -1,2 +1,2 @@
 # golf
-⛳ Snippets for code golf practice
+>   Snippets for code golf practice
