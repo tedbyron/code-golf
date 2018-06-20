@@ -1,2 +1,2 @@
 # golf
->   Snippets for code golf practice
+>   My (not so great) code golf solutions
