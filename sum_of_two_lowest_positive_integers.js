@@ -7,8 +7,7 @@
  */
 s=n=>n.sort((x,y)=>x-y).slice(0,2).reduce((x,y)=>x+y)
 
-/** 
- * 
+/**
  * @function
  * @param {number[]} numbers - input array
  */
