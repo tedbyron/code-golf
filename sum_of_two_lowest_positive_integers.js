@@ -6,15 +6,15 @@
 /**
  * golfed
  */
-s=n=>n.sort((x,y)=>x-y).slice(0,2).reduce((x,y)=>x+y)
+f=n=>n.sort((x,y)=>x-y).slice(0,2).reduce((x,y)=>x+y)
 
 /**
  * ungolfed
- * @param  {number[]} numbersArray input array
- * @return {number}              sum of the two lowest integers in numbersArray
+ * @param  {number[]} n input array
+ * @return {number}   sum of the two lowest integers in n
  */
-function s(numbersArray) {
-  return numbersArray.sort(function(x, y) { return x - y })    // sort n with compareFunction that compares each element to the next with subtraction (sorts ascending)
-          .slice(0,2)                               // slice first two elements from sorted array
-          .reduce(function(x, y) { return x + y })  // reduce two-element array with callback that sums each element
+function sumTwoSmallestNumbers(n) {
+  return n.sort(function(x, y) { return x - y })    // sort n with compareFunction that compares each element to the next with subtraction (sorts ascending)
+    .slice(0,2) // slice first two elements from sorted array
+    .reduce(function(x, y) { return x + y }) // reduce two-element array with callback that sums each element
 }
