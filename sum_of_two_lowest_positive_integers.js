@@ -1,5 +1,6 @@
 /**
- * "Create a function that returns the sum of the two lowest positive numbers from an array of minimum 4 integers." 
+ * "Create a function that returns the sum of the two lowest positive numbers
+ * from an array of minimum 4 integers."
  */
 
 /**
@@ -9,8 +10,8 @@ s=n=>n.sort((x,y)=>x-y).slice(0,2).reduce((x,y)=>x+y)
 
 /**
  * ungolfed
- * @function
- * @param {number[]} numbersArray - input array
+ * @param  {number[]} numbersArray input array
+ * @return {number}              sum of the two lowest integers in numbersArray
  */
 function s(numbersArray) {
   return numbersArray.sort(function(x, y) { return x - y })    // sort n with compareFunction that compares each element to the next with subtraction (sorts ascending)
