@@ -22,12 +22,12 @@ Object[m](args)          // subsequent calls
 
 ### Operators
 
--   bitwise or
+-   bitwise or `|`
     -   can round toward zero with a zero `|0`
--   bitwise not
+-   bitwise not `~`
     -   sets expression to the right to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
--   spread operator
-    -   saves bytes when looping over every element
+-   spread `[...]`
+    -   saves bytes when no callback or element is needed
 
 ### Loops
 
@@ -41,7 +41,6 @@ Object[m](args)          // subsequent calls
 -   array
     -   `join()`
         -   use template literals instead of parentheses to save two bytes
-    -   `[...array]` use spread operator when no callback or element is needed
 -   isNaN()
     -   use `number!=number` instead of isNaN(number)
 -   Math.random()
@@ -50,7 +49,6 @@ Object[m](args)          // subsequent calls
 -   string
     -   `slice` is always shorter than substring
     -   `split` with numbers instead of quotes to save two bytes
-    -   `[...string]` use spread operator when no callback or element is needed
 
 ### Variables
 
