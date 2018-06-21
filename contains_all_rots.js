@@ -5,7 +5,7 @@
 /**
  * golfed
  */
-f=(s,a)=>s.split('').every((c,i)=>a.includes(s.slice(i)+s.slice(0,i)))
+c=(s,a)=>s.split('').every((c,i)=>a.includes(s.slice(i)+s.slice(0,i)))
 
 /**
  * ungolfed
