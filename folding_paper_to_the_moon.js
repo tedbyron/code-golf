@@ -1,5 +1,7 @@
 /**
- * "Given a distance in meters and knowing that a piece of paper is .0001m thick, calculate how many folds it would take the paper to reach the distance"
+ * "Given a distance in meters and knowing that a piece of paper is .0001m
+ * thick, calculate how many folds it would take the paper to reach the
+ * distance. If input is negative, return null"
  */
 
 /**
@@ -7,6 +9,11 @@
  */
 f=d=>d>0?Math.max(0,Math.ceil(Math.log2(1e4*d))):null
 
+/**
+ * folds .0001m paper to distance d
+ * @param  {number} d distance to fold to
+ * @return {number|null}   number of folds | null if input is negative
+ */
 function foldTo(d) {
   return d > 0
     ? Math.max(0, Math.ceil( // required positive integer return

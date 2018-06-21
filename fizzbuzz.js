@@ -1,5 +1,7 @@
 /**
- * "Output FizzBuzz if input integer is divisible by 5 and 3, or else Fizz if it is divisible by 3, Buzz if it is divisible by 5, or the input integer if it is divisible by neither"
+ * "Output FizzBuzz if input integer is divisible by 5 and 3, or else Fizz if
+ * it is divisible by 3, Buzz if it is divisible by 5, or the input integer if
+ * it is divisible by neither"
  */
 
 /**

@@ -4,7 +4,7 @@
 
 ## Stuff to remember
 
-### Brackets
+### Bracket operator
 
 ```js
 Object[m='method'](args) // first method/property call
@@ -13,8 +13,6 @@ Object[m](args)          // subsequent calls
 
 | length of method/property | minimum calls |
 | ------------------------- | ------------- |
-| 1                         | ∞             |
-| 2                         | ∞             |
 | 3                         | 7             |
 | 4                         | 4             |
 | 5                         | 3             |
@@ -28,17 +26,22 @@ Object[m](args)          // subsequent calls
     -   can round toward zero with a zero `|0`
 -   bitwise not
     -   sets expression to the right to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
+-   spread operator
+    -   saves bytes when looping over every element
 
 ### Loops
 
 -   for
     -   brackets can be replaced with commas between statements
+-   forEach()
+    -   use [...array]
 
 ### Methods
 
 -   array
     -   `join()`
         -   use template literals instead of parentheses to save two bytes
+    -   `[...array]` use spread operator when no callback or element is needed
 -   isNaN()
     -   use `number!=number` instead of isNaN(number)
 -   Math.random()
@@ -47,6 +50,7 @@ Object[m](args)          // subsequent calls
 -   string
     -   `slice` is always shorter than substring
     -   `split` with numbers instead of quotes to save two bytes
+    -   `[...string]` use spread operator when no callback or element is needed
 
 ### Variables
 
