@@ -1,5 +1,5 @@
 /**
- * "Check if an array contains all rotations of a string"
+ * "Check if an array contains all rotations of a string, e.g. for the string 'abc' the array ['abc', 'bca', 'cab', 4, 5, false]" contains all of its rotations
  */
 
 /**
