@@ -25,9 +25,9 @@ Object[m](args)          // subsequent calls
 ### Operators
 
 -   bitwise or
-    -   `|0` can round toward zero
--   tilde
-    -   sets expression to the right to `-(number+1)`, so any comparison to !=-1 can be replaced
+    -   can round toward zero with a zero `|0`
+-   bitwise not
+    -   sets expression to the right to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
 
 ### Loops
 
