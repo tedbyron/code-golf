@@ -2,14 +2,19 @@
 
 >   My code golf solutions
 
-## Stuff to remember
+## Useful information
 
-### Bracket operator
+### Operators
 
-```js
-Object[m='method'](args) // first method/property call
-Object[m](args)          // subsequent calls
-```
+-   bitwise or `|`
+    -   `number|0` equivalent to Math.trunc(number)
+-   bitwise not `~`
+    -   sets expression to the right to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
+-   bracket operator `[]`
+    ```js
+    Object[m='method'](args) // first method/property call
+    Object[m](args)          // subsequent calls
+    ```
 
 | length of method/property | minimum calls |
 | ------------------------- | ------------- |
@@ -20,13 +25,7 @@ Object[m](args)          // subsequent calls
 | 7                         | 3             |
 | 8+                        | 2             |
 
-### Operators
-
--   bitwise or `|`
-    -   `number|0` equivalent to Math.trunc(number)
--   bitwise not `~`
-    -   sets expression to the right to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
--   spread `[...]`
+-   spread `...`
     -   saves bytes when no callback or element is needed
 
 ### Loops
