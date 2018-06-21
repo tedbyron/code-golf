@@ -23,7 +23,7 @@ Object[m](args)          // subsequent calls
 ### Operators
 
 -   bitwise or `|`
-    -   can round toward zero with a zero `|0`
+    -   `number|0` equivalent to Math.trunc(number)
 -   bitwise not `~`
     -   sets expression to the right to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
 -   spread `[...]`
