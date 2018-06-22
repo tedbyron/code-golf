@@ -13,7 +13,7 @@ s=n=>n.reduce((a,e)=>a+=e>0?e:0,0)
  * @param  {number[]} n array of numbers
  * @return {number}   sum of positive numbers in n
  */
-function sumPositives(n) {
+function sumPositives (n) {
   return n.reduce(function (a, e) {
     return a += e > 0 ? e : 0;
   }, 0);

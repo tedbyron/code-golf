@@ -19,8 +19,8 @@ o=(f,s)=>f(s.split`\n`).join`\n`
  * @param  {string[]} a input split string
  * @return {string[]}   unmirrored string array with mirrored elements
  */
-function vertMirror(a) {
-  return a.map(function(e) { // map over all elements
+function vertMirror (a) {
+  return a.map(function (e) { // map over all elements
     return [...e].reverse().join(''); // spread over all characters in element, reverse, and join back into string
   });
 };
@@ -30,7 +30,7 @@ function vertMirror(a) {
  * @param  {string[]} a input split string
  * @return {string[]}   mirrored string array with unmirrored elements
  */
-function horMirror(a) {
+function horMirror (a) {
   return a.reverse(); // reverse the elements in a
 };
 
@@ -40,6 +40,6 @@ function horMirror(a) {
  * @param  {string} s string to apply f to
  * @return {string}   s with f applied
  */
-function oper(f, s) {
+function oper (f, s) {
   return f(s.split('\n')).join('\n'); // both mirror functions need s to be split at newlines and joined with newlines after the function is applied
 };

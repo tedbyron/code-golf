@@ -14,7 +14,7 @@ f=d=>d>0?Math.max(0,Math.ceil(Math.log2(1e4*d))):null
  * @param  {number} d distance to fold to
  * @return {number|null}   number of folds | null if input is negative
  */
-function foldTo(d) {
+function foldTo (d) {
   return d > 0
     ? Math.max(0, Math.ceil( // required positive integer return
       Math.log2(1e4 * d)) // calculates folds based on .0001*2^n = d -> 2^n = 1000d
