@@ -17,5 +17,5 @@ i=(a,b)=>a.length^b.length?!1:b.concat(b).includes(a)
 function isRotation (a, b) {
   return a.length == b.length  // a cannot be a rotation of b unless it is the same length as  b
     ? false
-    : b.concat(b).includes(a); // concatenating b with itself will produce a string that contains all rotations of b
-};
+    : b.concat(b).includes(a) // concatenating b with itself will produce a string that contains all rotations of b
+}

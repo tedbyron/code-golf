@@ -19,5 +19,5 @@ function foldTo (d) {
     ? Math.max(0, Math.ceil( // required positive integer return
       Math.log2(1e4 * d)) // calculates folds based on .0001*2^n = d -> 2^n = 1000d
     )
-    : null; // required null return for negative input
-};
+    : null // required null return for negative input
+}
