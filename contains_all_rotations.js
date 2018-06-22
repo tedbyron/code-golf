@@ -16,8 +16,8 @@ c=(s,a)=>[...s].every((c,i)=>a.includes(s.slice(i)+s.slice(0,i)))
  * @return {boolean}   true if a contains all rotations of s
  */
 function containAllRots (s, a) {
-  return s.split('')  // split between every char in s
-    .every(function (c, i) { // ensure every char follows callback
-      return a.includes(s.slice(i) + s.slice(0, i)) // return if a includes swapped substrings of s sliced at index i
+  return [...s]  // spread acts as split('')
+    .every(function (c, i) { // ensure every character follows callback
+      return a.includes(s.slice(i) + s.slice(0, i)) // return true if a includes swapped substrings of s sliced at index i
     })
 }
