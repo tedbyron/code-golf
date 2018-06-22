@@ -52,6 +52,7 @@
 </tr>
 </tbody>
 </table>
+
 -   comma `,`
     -   replace curly braces in conditionals and loops with commas
 -   power `**`
@@ -121,6 +122,7 @@
 <td>data()</td>
 </tr>
 </table>
+
 -   initialize variables in parameters of functions or loops
 -   `this` or `self` instead of `window`
 -   array
