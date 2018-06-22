@@ -1,6 +1,6 @@
 # code-golf
 
->   My code golf solutions and a golfing reference
+>   My code golf solutions
 
 ## Operators
 

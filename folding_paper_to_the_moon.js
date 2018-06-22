@@ -10,7 +10,7 @@
 f=d=>d>0?Math.max(0,Math.ceil(Math.log2(1e4*d))):null
 
 /**
- * folds .0001m paper to distance d
+ * ungolfed
  * @param  {number} d distance to fold to
  * @return {number|null}   number of folds | null if input is negative
  */
