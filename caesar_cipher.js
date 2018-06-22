@@ -11,12 +11,12 @@
 /**
  * golfed program
  */
-alert((s=prompt)().replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+k+129)%26-~a),k=+s()))
+alert((s=prompt)().replace(/[a-z]/gi,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+k+129)%26-~a),k=+s()))
 
 /**
  * golfed function
  */
-c=(k,s)=>s.replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+k+129)%26-~a))
+c=(k,s)=>s.replace(/[a-z]/gi,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+k+129)%26-~a))
 
 /**
  * ungolfed
