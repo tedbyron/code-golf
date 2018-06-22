@@ -31,7 +31,7 @@ function caesar (k, s) {
         (c = m.charCodeAt(), // char code at matched character
           a = c & 96, // bitwise check if lowercase or not, sets value of a to ASCII value of A-1 or a-1
           c - a + k + 129 // c - a is the position of c in the alphabet, then add key value and 129
-        )%26 - ~a // modulus 26 to rotate past Z or z, then adds a+1 for an ASCII value
+        ) % 26 - ~a // modulus 26 to rotate past Z or z, then adds a+1 for an ASCII value
       )
     }
   )
