@@ -1,5 +1,5 @@
 /**
- * "Check if a string is an exact rotation of another string"
+ * "Check if a string is a rotation of another string"
  */
 
 /**
