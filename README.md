@@ -15,8 +15,8 @@
     -   replace `!=` with `^`
 -   bracket operator `[]`
     ```js
-    Object[m='method'](args) // first method/property call
-    Object[m](args)          // subsequent calls
+    Object[m='method'](arguments) // first method/property call
+    Object[m](arguments)          // subsequent calls
     ```
 <table>
 <thead>

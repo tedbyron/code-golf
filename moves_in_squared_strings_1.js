@@ -1,6 +1,9 @@
 /**
  * "Given a string of n lines, each substring being n characters long and
- * separated by a newline, make a function that mirrors the string while keeping substrings in order, a function that mirrors substrings while keeping the string in order, and a high-order function that "
+ * separated by a newline, make a function that mirrors the string while
+ * keeping substrings in order, a function that mirrors substrings while
+ * keeping the string in order, and a higher-order function that takes one of
+ * the mirror functions as an argument"
  */
 
 /**
@@ -35,7 +38,7 @@ function horMirror (a) {
 }
 
 /**
- * high order function that applies f to s
+ * higher-order function that applies f to s
  * @param  {function} f function to apply
  * @param  {string} s string to apply f to
  * @return {string}   s with f applied

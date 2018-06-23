@@ -11,14 +11,14 @@ alert(s=prompt().replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&
 /**
  * golfed function
  */
-c=(s)=>s.replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+142)%26-~a))
+r=(s)=>s.replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+142)%26-~a))
 
 /**
  * ungolfed
  * @param  {string} s string to rotate
  * @return {string}   rotated string
  */
-function caesar (s) {
+function rot13 (s) {
   return s.replace(/[a-z]/gi, // match each alphabetical character
     function (m) { // substring function on each match m
       return String.fromCharCode(
