@@ -1,5 +1,6 @@
 /**
- *
+ * "Given a string, count the number of letters that have duplicates, ignoring
+ * capitalization."
  */
 
 /**
