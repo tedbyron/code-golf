@@ -6,4 +6,4 @@
 /**
  * golfed
  */
-array_diff=(b,c)=>b.filter(d=>d^[...c])
+a=(b,c)=>b.filter(d=>d^[...c])

@@ -10,7 +10,7 @@
 -   bitwise not `~`
     -   sets number to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
     -   coerces non-numbers to `-1`
-    -   use with `search()`
+    -   use with `search()` (though `match()` should be used over `search()`)
 -   bitwise xor `^`
     -   replace `!=` with `^`
 -   bracket operator `[]`
@@ -89,7 +89,7 @@
     -   use coercion `''+array` instead of `join(',')` or `join()`
     -   spread operator instead of `forEach()` when possible
 -   string
-    -   `search()` instead of `indexOf()` unless regex is longer than string
+    -   `match()` instead of `search()` instead of `indexOf()` unless regex is longer than string or you need a numeric return
     -   `slice()` is always shorter than substring, can `slice(-n)` to get the last n elements
     -   `split()` use spread operator when splitting over every element
 
