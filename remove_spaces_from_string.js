@@ -3,7 +3,4 @@
  * string."
  */
 
-/**
- * golfed
- */
 n=a=>a.replace(/\s+/g,'')

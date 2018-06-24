@@ -6,7 +6,4 @@
  * after the last bus station (after the last array)"
  */
 
-/**
- * golfed
- */
 n=a=>a.reduce((a,b)=>a+b[0]-b[1],0)

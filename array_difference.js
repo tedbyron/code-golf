@@ -3,7 +3,4 @@
  * returns the result."
  */
 
-/**
- * golfed
- */
 a=(b,c)=>b.filter(d=>d^[...c])
