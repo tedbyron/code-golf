@@ -75,7 +75,7 @@
 -   `isFinite()`
     -   `1/number` to check instead
 -   `isNaN()`
-    -   `number!=number` instead of isNaN(number)
+    -   `number^number` instead of isNaN(number)
 -   `Math.pow()`
     -   `**` operator
 -   `Math.random()`
