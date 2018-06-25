@@ -10,8 +10,8 @@ d=a=>{[b,c,e=[]]=a.split('d').map(x=>parseInt(x));for(;b>0;)e[--b]=(Math.random(
 
 /**
  * ungolfed
- * @param  {String} a input string
- * @return {String}   sum of rolls and a list of the rolls
+ * @param  {string} a input string
+ * @return {string}   sum of rolls and a list of the rolls
  */
 const dndRoll = a => {
   const [b, c] = a.split('d').map(x => parseInt(x))

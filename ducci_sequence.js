@@ -17,10 +17,10 @@ d=(a,b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?d(a.map((x,y)=>Math.abs(x-a[(y
 
 /**
  * ungolfed
- * @param  {number} a      current n-tuple
- * @param  {array}  b = [] current step in the sequence
- * @param  {number} c = 1  array of previous n-tuples joined as Strings
- * @return {number}        number of steps for the sequence to descend
+ * @param  {number}   a      current n-tuple
+ * @param  {string[]} b = [] current step in the sequence
+ * @param  {number}   c = 1  array of previous n-tuples joined as Strings
+ * @return {number}          number of steps for the sequence to descend
  */
 function ducci (a, b = [], c = 1) {
   let a = prompt()
