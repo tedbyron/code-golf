@@ -3,4 +3,4 @@
  * order"
  */
 
-d=a=>+String(a).split``.sort().reverse().join``
+d=a=>+''+a.split``.sort().reverse().join``
