@@ -2,7 +2,8 @@
  * "A cashier starting with no change starts selling tickets $25 movie tickets
  * to people in a line. Each person has 25, 50, or 100 dollar bills. Given a
  * list of each person's bills, calculate whether or not the cashier has
- * enough change to give as each person pays"
+ * enough change to give as each person pays. If the cashier can give change to
+ * each person, return 'YES' or else return 'NO'"
  */
 
 /**
