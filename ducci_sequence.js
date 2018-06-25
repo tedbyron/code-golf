@@ -8,7 +8,7 @@
 /**
 * golfed program
 */
-(d=(a=prompt().split(/,\s/g),b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?d(a.map((x,y)=>Math.abs(x-a[(y+1)%a.length])),[...b,''+a],++c):alert(c))()
+(d=(a=prompt().match(/[0-9]+/g),b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?d(a.map((x,y)=>Math.abs(x-a[(y+1)%a.length])),[...b,''+a],++c):alert(c))()
 
 /**
  * golfed function
@@ -26,6 +26,6 @@ function ducci (a, b = [], c = 1) {
   let a = prompt()
   a = a.split(/,\s/g)
   return a.some(x => x != 0) && !b.includes(parseInt(a))
-    ? d(a.map((x,y) => Math.abs(x - a[(y + 1) % a.length])), [...b, a.toString()], ++c)
+    ? d(a.map((x,y) => Math.abs(x - a[(y + 1) % a.length])), [...b, String(a)], ++c)
     : c
 }
