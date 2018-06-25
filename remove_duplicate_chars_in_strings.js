@@ -3,4 +3,4 @@
  * string with only unique characters"
  */
 
-longest=(a,b)=>[...new Set(a+b)].sort().join('')
+l=(a,b)=>[...new Set(a+b)].sort().join``

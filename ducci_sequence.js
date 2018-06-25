@@ -17,15 +17,15 @@ d=(a,b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?d(a.map((x,y)=>Math.abs(x-a[(y
 
 /**
  * ungolfed
- * @param  {number} curr      current n-tuple
- * @param  {number} step = 0  current step in the sequence
- * @param  {object} prev = [] array of previous n-tuples joined as Strings
- * @return {undefined}        no return, function logs step number and n-tuples
+ * @param  {number} a      current n-tuple
+ * @param  {array}  b = [] current step in the sequence
+ * @param  {number} c = 1  array of previous n-tuples joined as Strings
+ * @return {number}        number of steps for the sequence to descend
  */
-function ducci (curr, step = 0, prev = []) {
-  console.log(`step ${step}: ${curr.join(', ')}`)
-  if (curr.some(c => c > 0) && !prev.includes(curr.join(''))) {
-    let next = curr.map((e, i) => Math.abs(e - curr[(i + 1) % curr.length]))
-    ducci(next, ++step, [...prev, curr.join('')])
-  }
+function ducci (a, b = [], c = 1) {
+  let a = prompt()
+  a = a.split(/,\s/g)
+  return a.some(x => x != 0) && !b.includes(parseInt(a))
+    ? d(a.map((x,y) => Math.abs(x - a[(y + 1) % a.length])), [...b, a.toString()], ++c)
+    : c
 }

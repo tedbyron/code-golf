@@ -54,11 +54,11 @@
 </table>
 
 -   comma `,`
-    -   replace curly braces in conditionals and loops with commas
+    -   replace curly braces in conditionals and loops with commas between statements
 -   power `**`
     -   `a**b` is equivalent to `Math.pow(a,b)`
 -   spread `...`
-    -   saves bytes when no callback or element is needed
+    -   saves bytes when no callback is needed
 
 ## Loops
 

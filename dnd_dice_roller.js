@@ -1,6 +1,6 @@
 /**
  * "Take a string input of the form 'NdM' and roll N M-sided dice with output
- * 'sum: rollValue rollValue...' like '15: 1 8 4' for an input string of '3d8'
+ * similar to '<SUM>: 1 5 8' for each roll of the dice"
  */
 
 /**

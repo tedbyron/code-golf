@@ -3,4 +3,4 @@
  * the minimum and maximum numbers separated with a space"
  */
 
-h=(a,b=a.split(' ').map(e=>+e))=>Math.max(...b)+' '+Math.min(...b)
+h=(a,b=a.split` `.map(e=>+e))=>Math.max(...b)+' '+Math.min(...b)
