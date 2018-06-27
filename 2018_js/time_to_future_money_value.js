@@ -19,7 +19,7 @@ calculateYears=(p,r,t,f)=>{for(i=0;p<f;++i)p+=p*r*(1-t);return i}
  */
 calculateYears = (p, r, t, f) => {
   for (i = 0; p < f; ++i) {
-    p += p * r * (1 - t) // simplified time value of money equation with tax
+    p += p * r * (1 - t) // p_next=p*(1+r)-((p*(1+r)-p)*t)
   }
   return i
 }
