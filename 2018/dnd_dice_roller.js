@@ -6,7 +6,7 @@
 /**
  * golfed
  */
-d=a=>{[b,c,e=[]]=a.split('d').map(x=>parseInt(x));for(;b>0;)e[--b]=(Math.random()*c+1)|0;return`${e.reduce((x,y)=>x+y)}: ${e.join(' ')}`}
+d=a=>{[b,c,e=[]]=a.split('d').map(x=>+x);for(;b>0;)e[--b]=(Math.random()*c+1)|0;return`${e.reduce((x,y)=>x+y)}: ${e.join(' ')}`}
 
 /**
  * ungolfed
@@ -14,11 +14,11 @@ d=a=>{[b,c,e=[]]=a.split('d').map(x=>parseInt(x));for(;b>0;)e[--b]=(Math.random(
  * @return {string}   sum of rolls and a list of the rolls
  */
 const dndRoll = a => {
-  const [b, c] = a.split('d').map(x => parseInt(x))
+  const [B, C] = a.split('d').map(x => parseInt(x))
   let e = []
 
-  for (let i = 0; i < b; i++) {
-    e[i] = Math.floor(Math.random() * c) + 1
+  for (let i = 0; i < B; i++) {
+    e[i] = Math.floor(Math.random() * C + 1)
   }
 
   let sum = e.reduce((x, y) => x + y)
