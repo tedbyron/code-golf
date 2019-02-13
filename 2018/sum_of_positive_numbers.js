@@ -4,7 +4,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 s=n=>n.reduce((a,e)=>a+=e>0?e:0,0)
 

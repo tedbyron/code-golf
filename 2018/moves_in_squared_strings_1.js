@@ -7,7 +7,7 @@
  */
 
 /**
- * golfed
+ * golfed functions
  */
 v=s=>s.map(e=>[...e].reverse().join``)
 h=s=>s.reverse()

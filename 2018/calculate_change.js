@@ -7,7 +7,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 t=a=>{b=c=0;for(i of a){if(i==25)b++;else if(i==50)b--,c++;else{if(c)b--,c--;else b-=3}if(b<0)return'NO'}return'YES'}
 
@@ -16,7 +16,7 @@ t=a=>{b=c=0;for(i of a){if(i==25)b++;else if(i==50)b--,c++;else{if(c)b--,c--;els
  * @param  {number[]} a array of payments from each customer
  * @return {string}     'YES' if the cashier has enough change for each customer
  */
-function tickets (a) => {
+function tickets (a) {
   b = c = 0
   for (i of a) {
     if (i == 25) {

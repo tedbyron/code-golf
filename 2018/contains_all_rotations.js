@@ -5,7 +5,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 c=(s,a)=>[...s].every((c,i)=>a.includes(s.slice(i)+s.slice(0,i)))
 

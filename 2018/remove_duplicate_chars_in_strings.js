@@ -3,4 +3,7 @@
  * string with only unique characters"
  */
 
+/**
+ * golfed function
+ */
 l=(a,b)=>[...new Set(a+b)].sort().join``

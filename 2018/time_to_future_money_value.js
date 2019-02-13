@@ -5,7 +5,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 calculateYears=(p,r,t,f)=>{for(i=0;p<f;++i)p+=p*r*(1-t);return i}
 

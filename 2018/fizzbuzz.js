@@ -5,7 +5,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 f=n=>(n%3?'':'Fizz')+(n%5?'':'Buzz')||n
 

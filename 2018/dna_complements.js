@@ -6,7 +6,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 d=a=>a.replace(/./g,c=>b[c])
 b={A:'T',T:'A',C:'G',G:'C'}
@@ -16,7 +16,7 @@ b={A:'T',T:'A',C:'G',G:'C'}
  * ungolfed
  * @param {string} a the input DNA nucleobases
  */
-function dnaStrand(a) => {
+function dnaStrand(a) {
   return a.replace(/./g, c => { // replace every character with the value in b
     return b[c]
   })

@@ -5,7 +5,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 f=d=>d>0?Math.max(0,Math.ceil(Math.log2(1e4*d))):null
 

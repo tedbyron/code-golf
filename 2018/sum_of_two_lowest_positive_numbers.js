@@ -4,7 +4,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 s=n=>n.sort((x,y)=>x-y).slice(0,2).reduce((x,y)=>x+y)
 

@@ -3,4 +3,7 @@
  * order"
  */
 
+/**
+ * golfed function
+ */
 d=a=>+(''+a).split``.sort().reverse().join``

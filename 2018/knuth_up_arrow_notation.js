@@ -3,7 +3,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 f=(a,n,b)=>n>1||b>0?a**b:f(a,n-1,f(a,n,b-1))
 
