@@ -8,12 +8,12 @@
 /**
 * golfed program
 */
-(d=(a=prompt().match(/[0-9]+/g),b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?d(a.map((x,y)=>Math.abs(x-a[(y+1)%a.length])),[...b,''+a],++c):alert(c))()
+(f=(a=prompt().match(/[0-9]+/g),b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?f(a.map((x,y)=>Math.abs(x-a[(y+1)%a.length])),[...b,''+a],++c):alert(c))()
 
 /**
  * golfed function
  */
-d=(a,b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?d(a.map((x,y)=>Math.abs(x-a[(y+1)%a.length])),[...b,''+a],++c):c
+f=(a,b=[],c=1)=>a.some(x=>x^0)&&!b.includes(''+a)?f(a.map((x,y)=>Math.abs(x-a[(y+1)%a.length])),[...b,''+a],++c):c
 
 /**
  * ungolfed

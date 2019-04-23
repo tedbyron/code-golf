@@ -6,4 +6,4 @@
 /**
  * golfed function
  */
-d=a=>+[...''+a].sort().reverse().join``
+f=a=>+[...''+a].sort().reverse().join``

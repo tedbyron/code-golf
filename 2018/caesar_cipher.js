@@ -11,23 +11,23 @@
 /**
  * golfed program
  */
-alert((s=prompt)().replace(/[a-z]/gi,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+k+129)%26-~a),k=+s()))
+alert((a=prompt)().replace(/[a-z]/gi,m=>String.fromCharCode((c=m.charCodeAt(),d=c&96,c-d+b+129)%26-~d),b=+a()))
 
 /**
  * golfed function
  */
-c=(k,s)=>s.replace(/[a-z]/gi,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+k+129)%26-~a))
+f=(a,b)=>a.replace(/[a-z]/gi,m=>String.fromCharCode((c=m.charCodeAt(),d=c&96,c-d+b+129)%26-~d))
 
 /**
  * ungolfed
- * @param   {number} k a length to rotate s
- * @param   {string} s a string to rotate
- * @returns {string}   the rotated string
+ * @param   {string} str a string to rotate
+ * @param   {number} key a length to rotate str
+ * @returns {string}     the rotated string
  */
-function caesar(k, s) {
-  return s.replace(/[a-z]/gi, m => { // substring function on each match of an alphabetical character
-    const c = m.charCodeAt(); // char code at matched character
-    const a = c & 96; // bitwise check if lowercase or not, sets value of a to ASCII value of A-1 or a-1
-    return String.fromCharCode((c - a + k + 129) % 26 + a + 1); // c - a is the position of c in the alphabet, add key value and 129, mod 26 to rotate past Z or z, then add a+1 for an ASCII value
+function caesar(str, key) {
+  return str.replace(/[a-z]/gi, m => { // substring function on each match of an alphabetical character
+    const charCode = m.charCodeAt(); // char code at matched character
+    const letterCase = charCode & 96; // bitwise check if lowercase or not, sets value of letterCase to ASCII value of A-1 (64) or a-1 (96)
+    return String.fromCharCode((charCode - letterCase + key + 129) % 26 + letterCase + 1); // charCode - letterCase is the position of charCode in the alphabet, add key and 129 in case key is negative, mod 26 to rotate past Z or z, then add letterCase+1 for an ASCII value
   });
 }

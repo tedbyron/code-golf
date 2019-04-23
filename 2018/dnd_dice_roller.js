@@ -6,7 +6,7 @@
 /**
  * golfed function
  */
-d=a=>{[b,c,e=[]]=a.split('d').map(x=>+x);for(;b>0;)e[--b]=(Math.random()*c+1)|0;return`${e.reduce((x,y)=>x+y)}: ${e.join(' ')}`}
+f=a=>{[b,c,e=[]]=a.split('d').map(x=>+x);for(;b>0;)e[--b]=(Math.random()*c+1)|0;return`${e.reduce((x,y)=>x+y)}: ${e.join(' ')}`}
 
 /**
  * ungolfed

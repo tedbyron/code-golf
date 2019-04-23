@@ -11,7 +11,7 @@ alert(prompt().replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96
 /**
  * golfed function
  */
-r=s=>s.replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+142)%26-~a))
+f=s=>s.replace(/[a-z]/ig,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a+142)%26-~a))
 
 /**
  * ungolfed

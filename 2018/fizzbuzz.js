@@ -7,24 +7,24 @@
 /**
  * golfed function
  */
-f=n=>(n%3?'':'Fizz')+(n%5?'':'Buzz')||n
+f=a=>(a%3?'':'Fizz')+(a%5?'':'Buzz')||a
 
 /**
  * ungolfed
- * @param   {number}        n an input number
+ * @param   {number}        a an input number
  * @returns {string|number}   string or n if n is not divisible by 3 or 5
  */
-function fizzBuzz (n) {
+function fizzBuzz(a) {
   let output;
 
-  if (n % 3 === 0) {
+  if (a % 3 === 0) {
     output += 'Fizz';
   }
-  if (n % 5 === 0) {
+  if (a % 5 === 0) {
     output += 'Buzz';
   }
-  if (n % 3 !== 0 && n % 5 !== 0) {
-    output = n;
+  if (a % 3 !== 0 && a % 5 !== 0) {
+    output = a;
   }
 
   return output;

@@ -6,4 +6,4 @@
 /**
  * golfed function
  */
-l=(a,b)=>[...new Set(a+b)].sort().join``
+f=(a,b)=>[...new Set(a+b)].sort().join``

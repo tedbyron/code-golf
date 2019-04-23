@@ -5,7 +5,7 @@
 /**
  * golfed function
  */
-i=(a,b)=>a.length^b.length?!1:b.concat(b).includes(a)
+f=(a,b)=>a.length^b.length?!1:b.concat(b).includes(a)
 
 /**
  * ungolfed

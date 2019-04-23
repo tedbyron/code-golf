@@ -9,9 +9,9 @@
 /**
  * golfed functions
  */
-v=s=>s.map(e=>[...e].reverse().join``)
-h=s=>s.reverse()
-o=(f,s)=>f(s.split`\n`).join`\n`
+v=a=>a.map(e=>[...e].reverse().join``)
+h=a=>a.reverse()
+o=(f,a)=>f(a.split`\n`).join`\n`
 
 /**
  * ungolfed
@@ -22,7 +22,7 @@ o=(f,s)=>f(s.split`\n`).join`\n`
  * @param   {string[]} a an input split string
  * @returns {string[]}   the unmirrored string array with mirrored elements
  */
-function vertMirror (a) {
+function vertMirror(a) {
   return a.map(e => { // map over all elements
     return [...e].reverse().join(''); // spread over all characters in element, reverse, and join back into string
   });
@@ -33,7 +33,7 @@ function vertMirror (a) {
  * @param   {string[]} a an input split string
  * @returns {string[]}   the mirrored string array with unmirrored elements
  */
-function horMirror (a) {
+function horMirror(a) {
   return a.reverse(); // reverse the elements in a
 }
 
@@ -43,6 +43,6 @@ function horMirror (a) {
  * @param   {string}   s a string to apply f to
  * @returns {string}     the result of f applied to s
  */
-function oper (f, s) {
-  return f(s.split('\n')).join('\n'); // both mirror functions need s to be split at newlines and joined with newlines after the function is applied
+function oper(f, a) {
+  return f(a.split('\n')).join('\n'); // both mirror functions need s to be split at newlines and joined with newlines after the function is applied
 }

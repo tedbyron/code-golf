@@ -8,7 +8,7 @@
 /**
  * golfed function
  */
-d=a=>a.replace(/./g,c=>b[c])
+f=a=>a.replace(/./g,c=>b[c])
 b={A:'T',T:'A',C:'G',G:'C'}
 
 
@@ -17,7 +17,7 @@ b={A:'T',T:'A',C:'G',G:'C'}
  * @param   {string} a an input string of DNA nucleobases
  * @returns {string}   the string of DNA nucleobases complimentary to a
  */
-function dnaStrand(a) {
+function dnaCompliments(a) {
   return a.replace(/./g, c => { // replace every character with the value in b
     return B[c];
   });

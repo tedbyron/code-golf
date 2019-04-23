@@ -10,7 +10,7 @@ alert((i=(a=prompt())=>!/(.).*\1/i.test(a))())
 /**
  * golfed function
  */
-i=a=>!/(.).*\1/i.test(a)
+f=a=>!/(.).*\1/i.test(a)
 
 /**
  * ungolfed

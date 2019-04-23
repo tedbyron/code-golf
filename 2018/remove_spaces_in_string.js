@@ -6,4 +6,4 @@
 /**
  * golfed function
  */
-n=a=>a.replace(/\s+/g,'')
+f=a=>a.replace(/\s+/g,'')

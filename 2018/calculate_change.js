@@ -9,14 +9,14 @@
 /**
  * golfed function
  */
-t=a=>{b=c=0;for(i of a){if(i==25)b++;else if(i==50)b--,c++;else{if(c)b--,c--;else b-=3}if(b<0)return'NO'}return'YES'}
+f=a=>{b=c=0;for(i of a){if(i==25)b++;else if(i==50)b--,c++;else{if(c)b--,c--;else b-=3}if(b<0)return'NO'}return'YES'}
 
 /**
  * ungolfed
  * @param   {number[]} a an array of single bills being paid to the cashier
  * @returns {string}     whether the cashier has enough change for each customer
  */
-function tickets (a) {
+function hasEnoughChange(a) {
   let b = c = 0;
   for (i of a) {
     if (i == 25) {

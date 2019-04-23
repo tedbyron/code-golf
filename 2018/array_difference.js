@@ -6,4 +6,4 @@
 /**
  * golfed function
  */
-a=(b,c)=>b.filter(d=>d^[...c])
+f=(a,b)=>a.filter(e=>!b.includes(e))

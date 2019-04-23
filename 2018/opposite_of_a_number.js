@@ -5,4 +5,4 @@
 /**
  * golfed function
  */
-o=n=>-n
+f=n=>-n

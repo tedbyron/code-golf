@@ -12,4 +12,4 @@ alert(prompt().replace(/[！-～]/g,m=>String.fromCharCode(m.charCodeAt()-0xFEE0
 /**
  * golfed function
  */
-c=s=>s.replace(/[！-～]/g,m=>String.fromCharCode(m.charCodeAt()-0xFEE0))
+f=a=>a.replace(/[！-～]/g,m=>String.fromCharCode(m.charCodeAt()-0xFEE0))

@@ -6,14 +6,14 @@
 /**
  * golfed function
  */
-d=a=>([...a.toLowerCase()].sort().join``.match(/(.)\1+/gi)||[]).length
+f=a=>([...a.toLowerCase()].sort().join``.match(/(.)\1+/gi)||[]).length
 
 /**
  * ungolfed
  * @param   {string} a an input string
  * @returns {number}   the number of letters that have duplicates in the string
  */
-function d(a) {
+function getDuplicateCount(a) {
   return (
     a.toLowerCase()
       .split('')
