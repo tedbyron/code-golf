@@ -20,19 +20,14 @@ c=(k,s)=>s.replace(/[a-z]/gi,m=>String.fromCharCode((c=m.charCodeAt(),a=c&96,c-a
 
 /**
  * ungolfed
- * @param  {number} k amount to rotate s
- * @param  {string} s string to rotate
- * @return {string}   rotated string
+ * @param   {number} k a length to rotate s
+ * @param   {string} s a string to rotate
+ * @returns {string}   the rotated string
  */
-function caesar (k, s) {
-  return s.replace(/[a-z]/gi, // match each alphabetical character
-    function (m) { // substring function on each match m
-      return String.fromCharCode(
-        (c = m.charCodeAt(), // char code at matched character
-          a = c & 96, // bitwise check if lowercase or not, sets value of a to ASCII value of A-1 or a-1
-          c - a + k + 129 // c - a is the position of c in the alphabet, then add key value and 129
-        ) % 26 - ~a // modulus 26 to rotate past Z or z, then adds a+1 for an ASCII value
-      )
-    }
-  )
+function caesar(k, s) {
+  return s.replace(/[a-z]/gi, m => { // substring function on each match of an alphabetical character
+    const c = m.charCodeAt(); // char code at matched character
+    const a = c & 96; // bitwise check if lowercase or not, sets value of a to ASCII value of A-1 or a-1
+    return String.fromCharCode((c - a + k + 129) % 26 + a + 1); // c - a is the position of c in the alphabet, add key value and 129, mod 26 to rotate past Z or z, then add a+1 for an ASCII value
+  });
 }

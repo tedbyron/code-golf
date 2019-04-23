@@ -19,30 +19,30 @@ o=(f,s)=>f(s.split`\n`).join`\n`
 
 /**
  * mirrors elements but not input string array
- * @param  {string[]} a input split string
- * @return {string[]}   unmirrored string array with mirrored elements
+ * @param   {string[]} a an input split string
+ * @returns {string[]}   the unmirrored string array with mirrored elements
  */
 function vertMirror (a) {
-  return a.map(function (e) { // map over all elements
-    return [...e].reverse().join('') // spread over all characters in element, reverse, and join back into string
-  })
+  return a.map(e => { // map over all elements
+    return [...e].reverse().join(''); // spread over all characters in element, reverse, and join back into string
+  });
 }
 
 /**
  * mirrors input string array but not elements
- * @param  {string[]} a input split string
- * @return {string[]}   mirrored string array with unmirrored elements
+ * @param   {string[]} a an input split string
+ * @returns {string[]}   the mirrored string array with unmirrored elements
  */
 function horMirror (a) {
-  return a.reverse() // reverse the elements in a
+  return a.reverse(); // reverse the elements in a
 }
 
 /**
  * higher-order function that applies f to s
- * @param  {function} f function to apply
- * @param  {string} s string to apply f to
- * @return {string}   s with f applied
+ * @param   {function} f a function to apply
+ * @param   {string}   s a string to apply f to
+ * @returns {string}     the result of f applied to s
  */
 function oper (f, s) {
-  return f(s.split('\n')).join('\n') // both mirror functions need s to be split at newlines and joined with newlines after the function is applied
+  return f(s.split('\n')).join('\n'); // both mirror functions need s to be split at newlines and joined with newlines after the function is applied
 }

@@ -7,19 +7,19 @@
 /**
  * golfed function
  */
-calculateYears=(p,r,t,f)=>{for(i=0;p<f;++i)p+=p*r*(1-t);return i}
+c=(p,r,t,f)=>{for(i=0;p<f;++i)p+=p*r*(1-t);return i}
 
 /**
  * ungolfed
- * @param  {number} p     present value
- * @param  {number} r     interest rate
- * @param  {number} t     tax rate
- * @param  {number} f     future value
- * @return {number}       number of years for p to reach f
+ * @param   {number} p a present value
+ * @param   {number} r an interest rate
+ * @param   {number} t a tax rate
+ * @param   {number} f a future value
+ * @returns {number}   the number of years for p to reach f
  */
-calculateYears = (p, r, t, f) => {
-  for (i = 0; p < f; ++i) {
-    p += p * r * (1 - t) // p_next=p*(1+r)-((p*(1+r)-p)*t)
+function calculateYears(p, r, t, f) {
+  for (i = 0; p < f; i++) {
+    p += p * r * (1 - t); // p_next=p*(1+r)-((p*(1+r)-p)*t)
   }
-  return i
+  return i;
 }

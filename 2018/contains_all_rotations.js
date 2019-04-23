@@ -11,12 +11,12 @@ c=(s,a)=>[...s].every((c,i)=>a.includes(s.slice(i)+s.slice(0,i)))
 
 /**
  * ungolfed
- * @param  {string}   s string to check
- * @param  {string[]} a may contain all rotations of s
- * @return {boolean}   true if a contains all rotations of s
+ * @param   {string}   s an input string
+ * @param   {string[]} a an input array that may contain all rotations of s
+ * @returns {boolean}    true if a contains all rotations of s
  */
 function containAllRots (s, a) {
-  return [...s]  // spread acts as split('')
+  return [...s]  // spread acts like split('')
     .every(function (c, i) { // ensure every character follows callback
       return a.includes(s.slice(i) + s.slice(0, i)) // return true if a includes swapped substrings of s sliced at index i
     })

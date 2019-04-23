@@ -11,19 +11,21 @@ f=n=>(n%3?'':'Fizz')+(n%5?'':'Buzz')||n
 
 /**
  * ungolfed
- * @param  {number} n input number
- * @return {string|number} string if n is divisible by 3 or 5
+ * @param   {number}        n an input number
+ * @returns {string|number}   string or n if n is not divisible by 3 or 5
  */
 function fizzBuzz (n) {
-  let output
+  let output;
+
   if (n % 3 === 0) {
-    output += 'Fizz'
+    output += 'Fizz';
   }
   if (n % 5 === 0) {
-    output += 'Buzz'
+    output += 'Buzz';
   }
   if (n % 3 !== 0 && n % 5 !== 0) {
-    output = n
+    output = n;
   }
-  return output
+
+  return output;
 }

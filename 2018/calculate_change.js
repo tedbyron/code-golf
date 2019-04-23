@@ -13,26 +13,27 @@ t=a=>{b=c=0;for(i of a){if(i==25)b++;else if(i==50)b--,c++;else{if(c)b--,c--;els
 
 /**
  * ungolfed
- * @param  {number[]} a array of payments from each customer
- * @return {string}     'YES' if the cashier has enough change for each customer
+ * @param   {number[]} a an array of single bills being paid to the cashier
+ * @returns {string}     whether the cashier has enough change for each customer
  */
 function tickets (a) {
-  b = c = 0
+  let b = c = 0;
   for (i of a) {
     if (i == 25) {
-      b++
+      b++;
     } else if (i == 50) {
-      b--
-      c++
+      b--;
+      c++;
     } else {
       if (c) {
-        b--
-        c--
+        b--;
+        c--;
       } else {
         b -= 3;
       }
     }
-    if (b < 0) return 'NO'
+
+    if (b < 0) return 'NO';
   }
-  return 'YES'
+  return 'YES';
 }

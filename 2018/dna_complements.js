@@ -14,17 +14,18 @@ b={A:'T',T:'A',C:'G',G:'C'}
 
 /**
  * ungolfed
- * @param {string} a the input DNA nucleobases
+ * @param   {string} a an input string of DNA nucleobases
+ * @returns {string}   the string of DNA nucleobases complimentary to a
  */
 function dnaStrand(a) {
   return a.replace(/./g, c => { // replace every character with the value in b
-    return b[c]
-  })
+    return B[c];
+  });
 }
 
-b = {
+const B = {
   A: 'T',
   T: 'A',
   C: 'G',
   G: 'C'
-}
+};

@@ -10,17 +10,17 @@ d=a=>{[b,c,e=[]]=a.split('d').map(x=>+x);for(;b>0;)e[--b]=(Math.random()*c+1)|0;
 
 /**
  * ungolfed
- * @param  {string} a input string
- * @return {string}   sum of rolls and a list of the rolls
+ * @param   {string} a an input string
+ * @returns {string}   the sum of rolls and a list of the rolls
  */
-const dndRoll = a => {
-  const [B, C] = a.split('d').map(x => parseInt(x))
-  let e = []
+function dndRoll(a) {
+  const [B, C] = a.split('d').map(x => parseInt(x));
+  let e = [];
 
   for (let i = 0; i < B; i++) {
-    e[i] = Math.floor(Math.random() * C + 1)
+    e[i] = Math.floor(Math.random() * C + 1);
   }
 
-  let sum = e.reduce((x, y) => x + y)
-  return `${sum}: ${e.join(' ')}`
+  let sum = e.reduce((x, y) => x + y);
+  return `${sum}: ${e.join(' ')}`;
 }

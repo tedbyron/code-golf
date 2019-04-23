@@ -2,6 +2,8 @@
 
 >   My code golf solutions
 
+# JavaScript Code Golf Notes
+
 ## Operators
 
 -   remove whitespace after operators when possible
@@ -65,7 +67,7 @@
 -   for, for in , for of
     -   reverse loops to remove expressions
         ```js
-        for (a=0;a<x.length;a++) // before
+        for (a=0;a<b.length;a++) // before
         for (a=b.length;a--;)    // after
         ```
     -   `[...array]` use spread operator when possible

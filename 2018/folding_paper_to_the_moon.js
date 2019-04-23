@@ -11,13 +11,13 @@ f=d=>d>0?Math.max(0,Math.ceil(Math.log2(1e4*d))):null
 
 /**
  * ungolfed
- * @param  {number} d distance to fold to
- * @return {number|null}   number of folds | null if input is negative
+ * @param   {number}      d a distance to fold to
+ * @returns {number|null}   the number of folds or null if input is negative
  */
-function foldTo (d) {
+function foldTo(d) {
   return d > 0
     ? Math.max(0, Math.ceil( // required positive integer return
       Math.log2(1e4 * d)) // calculates folds based on .0001*2^n = d -> 2^n = 10000d
     )
-    : null // required null return for negative input
+    : null; // required null return for negative input
 }
