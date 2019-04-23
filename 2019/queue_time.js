@@ -7,7 +7,7 @@
  */
 
 /**
- * golfed
+ * golfed function
  */
 f=(a,b)=>Math.max(...a.reduce((c,d)=>{c[c.indexOf(Math.min(...c))]+=d;return c},Array(b).fill(0)))
 
