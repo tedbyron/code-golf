@@ -8,9 +8,9 @@
 /**
  * golfed functions
  */
-Math.round=n=>n+.5|0
-Math.ceil=n=>n%1>0?n+1|0:n
-Math.floor=n=>n|0
+Math.round=a=>a+.5|0
+Math.ceil=a=>a%1>0?a+1|0:a
+Math.floor=a=>a|0
 
 /**
  * ungolfed
