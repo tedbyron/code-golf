@@ -18,8 +18,8 @@ f=(a,b)=>Math.max(...a.reduce((c,d)=>{c[c.indexOf(Math.min(...c))]+=d;return c},
  * @returns {number}             the time required for all customers to checkout
  */
 function queueTime(customers, n) {
-  return Math.max(...customers.reduce((a, c) => {
-    a[a.indexOf(Math.min(...a))] += c;
-    return a;
+  return Math.max(...customers.reduce((acc, cur) => {
+    acc[acc.indexOf(Math.min(...acc))] += cur;
+    return acc;
   }, Array(n).fill(0)));
 }
