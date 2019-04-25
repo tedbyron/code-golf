@@ -2,7 +2,7 @@
  * "In mathematics, a perfect power is a positive integer that can be expressed
  * as an integer power of another positive integer. More formally, n is a
  * perfect power if there exist natural numbers m > 1, and k > 1 such that
- * mk = n. Your task is to check wheter a given integer is a perfect power."
+ * m**k = n. Your task is to check whether a given integer is a perfect power."
  */
 
 /**
