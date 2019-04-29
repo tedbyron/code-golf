@@ -14,7 +14,7 @@
     -   coerces non-numbers to `-1`
     -   use with `search()` (though `match()` should be used over `search()`)
 -   bitwise xor `^`
-    -   replace `!=` with `^`
+    -   replace `!=` with `^` when comparing integers
 -   bracket operator `[]`
     ```js
     Object[m='method'](arguments) // first method/property call
