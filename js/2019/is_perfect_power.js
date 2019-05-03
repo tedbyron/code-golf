@@ -16,9 +16,11 @@ f=n=>{for(m=2;m*m<=n;m++)for(k=2;m**k<=n;k++)if(m**k==n)return[m,k];return null}
  * @returns {(number[]|null)}   [m, k] if n is a perfect power, or else null
  */
 function isPerfectPower(n) {
+  // 1 < base <= Math.sqrt(n)
   for (let m = 2; m * m <= n; m++) {
+    // 1 < exponent <= (Math.log(n) / Math.log(m))
     for (let k = 2; m ** k <= n; k++) {
-      if (m ** k === n) return [m, k];
+      if (m ** k === n) { return [m, k]; }
     }
   }
   return null;

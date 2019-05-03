@@ -17,11 +17,14 @@ f=(a,b,[l,r]=[[...a],[...b]].map(c=>c.reduce((d,e)=>d+(e=='!'?2:3),0)))=>l^r?l>r
  * @returns {string}   which side has the heavier weighted characters
  */
 function balance(a, b) {
+  // destructure array into two weights
   [left, right] = [[...a], [...b]].map(cur => {
+    // reduce arrays to their cumulative weighted values
     return cur.reduce((acc, cur) => {
       return acc + (cur === '!' ? 2 : 3);
     }, 0);
   });
+
   return left !== right
     ? left > right
       ? "Left"

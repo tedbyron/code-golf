@@ -22,7 +22,7 @@ function arithmetic(a, b, operation) {
     'a': a + b,
     's': a - b,
     'm': a * b,
-    'd': a / b
+    'd': a / b,
   };
 
   return ops[operation[0]];

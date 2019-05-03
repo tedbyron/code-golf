@@ -7,13 +7,13 @@
 ## Operators
 
 -   remove whitespace after operators when possible
--   bitwise or `|`
+-   bitwise OR `|`
     -   `number|0` equivalent to `Math.trunc(number)`
--   bitwise not `~`
+-   bitwise NOT `~`
     -   sets number to `-(number+1)`, so can be used with functions that return -1 if a 0 return is needed
     -   coerces non-numbers to `-1`
     -   use with `search()` (though `match()` should be used over `search()`)
--   bitwise xor `^`
+-   bitwise XOR `^`
     -   replace `!=` with `^` when comparing integers
 -   bracket operator `[]`
     ```js
@@ -84,7 +84,7 @@
     -   `new Date & 1` == `Math.random() < .5`
     -   `new Date % 330` == `Math.floor(Math.random()*330)`
 -   `Math.trunc()`, `Math.round()`
-    -   `|0` bitwise or instead
+    -   `|0` bitwise OR instead
 -   `RegExp()`
     -   `eval()` instead
 -   array

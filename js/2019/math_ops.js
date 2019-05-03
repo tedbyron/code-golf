@@ -21,7 +21,7 @@ Math.floor=a=>a|0
  * @returns {number}   the closest integer to n
  */
 Math.round = function(n) {
-  return n + .5 | 0;
+  return n + .5 | 0; // add .5 in case mantissa >= .5
 };
 
 /**
@@ -29,7 +29,7 @@ Math.round = function(n) {
  * @returns {number}   the ceiling of n
  */
 Math.ceil = function(n) {
-  return n % 1 > 0
+  return n % 1 > 0 // add 1 and truncate unless n is a whole number
     ? n + 1 | 0
     : n;
 };
@@ -39,5 +39,5 @@ Math.ceil = function(n) {
  * @returns {number}   the floor of n
  */
 Math.floor = function(n) {
-  return n | 0;
+  return n | 0; // bitwise or equivalent Math.trunc()
 };

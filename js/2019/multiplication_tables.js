@@ -17,9 +17,9 @@ f=(a,b)=>[...Array(a)].map((_,i)=>[...Array(b)].map((_,j)=>(i+1)*(j+1)))
  * @returns {number[][]}            the resulting multiplication table
  */
 function multiplicationTable(numRows, numColumns) {
-  return [...Array(numRows)].map((_, i) => {
-    return [...Array(numColumns)].map((_, j) => {
-      return (i + 1) * (j + 1);
+  return [...Array(numRows)].map((_, idxRow) => {
+    return [...Array(numColumns)].map((_, idxCol) => {
+      return (idxRow + 1) * (idxCol + 1);
     });
   });
 }
