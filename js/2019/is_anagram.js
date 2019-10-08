@@ -17,7 +17,12 @@ a=(b,c,[d,e]=[b,c].map(f=>f.match(/[a-z]+/gi).join``.toLowerCase().split``.sort(
  * @returns {boolean}         true if the two strings are anagrams, else false
  */
 function anagrams(stringA, stringB) {
-  const getLettersInOrder = str => str.match(/[a-z]+/gi).join('').toLowerCase().split('').sort().join('');
+  const getLettersInOrder = str => str.match(/[a-z]+/gi)
+    .join('')
+    .toLowerCase()
+    .split('')
+    .sort()
+    .join('');
   const arrayA = getLettersInOrder(stringA), arrayB = getLettersInOrder(stringB);
 
   return arrayA === arrayB;
