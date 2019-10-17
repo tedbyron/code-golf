@@ -1,8 +1,8 @@
 /**
  * golfed functions
  */
-x=(a,b)=>b^0?gcd(b,a%b):a
-y=(a,b)=>Math.abs(a*b)/gcd(a,b)
+x=(a,b)=>b^0?x(b,a%b):a
+y=(a,b)=>Math.abs(a*b)/x(a,b)
 z=a=>{b=y(a[0][1],a[1][1]);for(i=2;i<a.length;i++)b=y(b,a[i][1]);a.forEach(c=>{e=b/c[1];c[0]*=e;c[1]=b});return a}
 
 /**
