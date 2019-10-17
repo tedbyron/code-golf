@@ -1,4 +1,11 @@
 /**
+ * golfed functions
+ */
+x=(a,b)=>b^0?gcd(b,a%b):a
+y=(a,b)=>Math.abs(a*b)/gcd(a,b)
+z=a=>{b=y(a[0][1],a[1][1]);for(i=2;i<a.length;i++)b=y(b,a[i][1]);a.forEach(c=>{e=b/c[1];c[0]*=e;c[1]=b});return a}
+
+/**
  * @param   {number} a first number
  * @param   {number} b second number
  * @returns {number}   the greatest common divisor of a and b
@@ -32,7 +39,7 @@ function convertFractions(arr) {
     lcd = lcm(lcd, arr[i][1]);
   }
 
-  arr.forEach((cur, idx) => {
+  arr.forEach(cur => {
     let fac = lcd / cur[1];
     cur[0] *= fac;
     cur[1] = lcd;
