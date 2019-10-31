@@ -32,7 +32,7 @@ function movingShift(str, key) {
 
       return String.fromCharCode((charCode - letterCase + key + idx + 129) % 26 + letterCase + 1);
     });
-  }).join('').match(RegExp(`.{1,${Math.ceil(splitStr.length/5)}}`, 'g'));
+  }).join('').match(new RegExp(`.{1,${Math.ceil(splitStr.length/5)}}`, 'g'));
 
   return arr.length === 5 ? arr : arr.concat(['']);
 }
